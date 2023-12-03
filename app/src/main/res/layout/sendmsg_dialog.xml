@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="판매자에게 메세지 작성"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To."
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/senderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="receiver"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/editMsgContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editborder"
+            android:gravity="top"
+            android:textColorHint="@color/subcolor"
+            android:hint="판매자에게 보낼 메세지를 작성해주세요."
+            android:backgroundTint="@color/white"
+            android:textSize="15sp"
+            android:minLines="10"
+            android:padding="10dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="전송"
+            android:textColor="@color/maincolor"
+            android:textStyle="bold"
+            android:minWidth = "100dp"
+            android:minHeight = "0dp"
+            android:padding="4dp"
+            android:background="@drawable/squarebtn_reverse"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성 취소"
+            android:textStyle="bold"
+            android:minWidth = "100dp"
+            android:minHeight = "0dp"
+            android:padding="4dp"
+            android:background="@drawable/squarebtn" />
+    </LinearLayout>
+</LinearLayout>
